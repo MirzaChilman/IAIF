@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -6,7 +7,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -26,6 +26,8 @@ import {
       isOpen: !this.state.isOpen
     });
   }
+
+  
   render() {
     return (
       <div>
@@ -35,13 +37,13 @@ import {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/">Home</NavLink>
+                <NavLink exact to="/" >Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/alumni/">Alumni</NavLink>
+                <NavLink to="/alumni/">Alumni</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/login/">Login</NavLink>
+                <NavLink to="/login/">Login</NavLink>
               </NavItem>
               {/*<UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

@@ -11,28 +11,30 @@ import {
 
 const ListNews = (props) => {
 	return(
-		<div className='container'>
-			<div className="section-title">
-				Berita Terbaru
-			</div>
-			<div className='row'>
-			{ props.news.map( (data) =>  
-				<div className='col-md-4 news-box' key={data.objectId}>
-					<Card className="mb-4">
-						<div className="news-date">
-			          		{ data.createdDateTime }
-			          	</div>
-			          	<div className='news-img-frame'>
-			          		<CardImg top width="100%" src={data.image} alt="Card image cap" />
-			          	</div>			        
-				        <CardBody>
-				          <CardTitle>{data.title}</CardTitle>
-				          <CardText>{ data.body }</CardText>		
-				          <Link to="/news"><Button color='primary' size="sm">Read more</Button></Link>	          
-				        </CardBody>
-				    </Card>
+		<div className='container-fluid container-white section-pad'>
+			<div className='container'>
+				<div className="section-title">
+					Berita Terbaru
 				</div>
-			) }
+				<div className='row'>
+				{ props.news.map( (data) =>  
+					<div className='col-md-4 news-box' key={data.objectId}>
+						<Card className="mb-4">
+							<div className="news-date">
+				          		{ data.createdDateTime }
+				          	</div>
+				          	<div className='news-img-frame'>
+				          		<CardImg top width="100%" src={data.image} alt="Card image cap" />
+				          	</div>			        
+					        <CardBody>
+					          <CardTitle>{data.title}</CardTitle>
+					          <CardText>{ data.body }</CardText>		
+					          <Link to="/news"><Button color='primary' size="sm">Read more</Button></Link>	          
+					        </CardBody>
+					    </Card>
+					</div>
+				) }
+				</div> 
 			</div> 
 	    </div>
 	)

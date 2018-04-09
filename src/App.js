@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Route }      from 'react-router-dom';
 /*import Home               from './components/Home';*/
+import SmallBanner           from './components/SmallBanner';
+import Footer           from './components/Footer';
 import NewsDetail           from './components/NewsDetail';
 import ContactDetail           from './components/ContactDetail';
 import NavbarKu             from './components/NavbarKu';
@@ -68,6 +70,7 @@ class App extends Component {
           <NavbarKu/>
           <Route exact path="/" render={ () => (
               <Aux>
+                <SmallBanner />
                 <ListContact  contacts={this.state.contacts}  />
                 <ListNews     news    ={this.state.news}      />
               </Aux>
@@ -92,6 +95,7 @@ class App extends Component {
               <SignUp/>
             )}
           /> 
+          <Footer/>
         </div>
         
     );

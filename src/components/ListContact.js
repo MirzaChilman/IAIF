@@ -2,6 +2,7 @@ import React, 	{ Component } 					from 'react'	 			;
 import escapeRegExp								from 'escape-string-regexp'	;
 import 			{ Input, InputGroup, Button }	from 'reactstrap'			;
 import sortBy 									from 'sort-by'				;
+import {Link} 									from 'react-router-dom'		;
 
 class ListContact extends Component {
 	/*State*/
@@ -86,7 +87,7 @@ class ListContact extends Component {
 										<img src={data.image} alt={data.name} className='contact-photo'/>
 									</div>
 									<div className='col-xs-9' align='left'>
-										<div className='contact-name'>{data.name}</div>
+										<div className='contact-name'><Link to={ '/alumni/'+data.objectId }>{data.name}</Link></div>
 										<div className='contact-email'>{data.email}</div>
 										<div className='contact-detail'>this is contact detail paragraph.</div>
 									</div>

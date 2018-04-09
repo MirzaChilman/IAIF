@@ -7,6 +7,7 @@ gray #E2E2E2
 
 body{
   font-family: arial !important;
+  background-color: #F7F7F7 !important;
 }
 
 
@@ -193,8 +194,8 @@ body{
 }
 
 .section-pad{
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }/* /#section-end  */
 
 /* Contact */
@@ -223,6 +224,9 @@ body{
   margin-top: 10px;
   font-size:10pt;
   font-weight: 600;
+}
+
+.contact-name a{
   color:#000 !important;
 }
 
@@ -338,6 +342,72 @@ body{
   padding:20px;
   margin-bottom: 20px;
 }
+
+.banner{
+  background-color:#3F9BE7;
+  padding:2em;
+}
+
+.banner h4{
+  color:#f2f2f2 !important;
+}
+
+.banner .redirect-btn{
+  -webkit-transition: 0.5s; /* Safari */
+  transition: 0.5s;
+  background-color: transparent; 
+  color:#fff;
+  font-size:10pt;
+  border-radius: 20px;
+}
+
+.banner .redirect-btn:hover{
+  background-color:#fff;
+  color:#1c1c1c;
+}
+
+.container-white{
+  background-color: #fff !important;
+}
+
+/*footer*/
+.footer{
+  background-color: #194366;
+  padding:4em;
+}
+
+.footer p{
+  font-size:10pt;
+}
+
+.footer .dark{
+  color:#92B5D2 !important;
+}
+
+.footer .light{
+  color:#f2f2f2 !important;
+}
+
+.footer-link, .footer-info{
+  list-style-type: none;
+  font-size:10pt;
+  line-height: 2;
+  padding: 0px;
+}
+
+.footer-link > li > a,
+.footer-info > li > a{
+  color:#e6e6e6;
+}
+
+.footer-info > li > a{
+  text-decoration: none;
+}
+
+.footer-link > li > a:hover{
+  color:#fff;
+}
+/*footer end*/
 
 /* Label */
 .label-box h5{

@@ -7,7 +7,7 @@
     - arahkan ke folder root Apps (./web-iaif)
     - jalankan perintah `npm install`
     - jalankan perintah `npm start`
-Selamat Berkoding
+     Selamat Berkoding
 
 
 ## Pengenalan singkat tentang React
